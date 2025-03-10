@@ -84,5 +84,13 @@ game:GetService("UserInputService").InputBegan:Connect(function(input, gameproc)
 
     end
  
-
+if not getgenv().DisableNotification then
+	stgui:SetCore("SendNotification", {
+		Title = "M1 Reset Made By Astralitary",
+		Icon = "",
+		Text = "Thanks For Buying",
+		Duration = 10,
+		Button1 = "Dismiss",
+		Callback = function() end
+	})
 end)
